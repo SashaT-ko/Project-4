@@ -1,0 +1,72 @@
+//Regular
+@mixin title() {
+    font-family: $font-Dela-Gothic-One;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+
+    @media all and (max-width: 710px) {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    @media all and (max-width: 560px) {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+//Bold
+@mixin bold-text($fs: 14px, $lh: 23px, $color: #000000) {
+    font-family: $font-Raleway-Bold;
+    font-size: $fs;
+    font-weight: 700;
+    line-height: $lh;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $color;
+}
+
+//Regular
+@mixin nav-text() {
+    font-family: $font-Raleway-Regular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+//Light
+@mixin main-text($fs: 14px, $lh: 23px, $color: #000000) {
+    font-family: $font-Raleway-Light;
+    font-size: $fs;
+    font-weight: 300;
+    line-height: $lh;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $color;
+
+    @media all and (max-width: 560px) {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+//SemiBold-text
+@mixin semibold-text($fs: 12px, $lh: 20px) {
+    font-family: $font-Raleway-SemiBold;
+    font-size: $fs;
+    font-weight: 600;
+    line-height: $lh;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin container() {
+    width: $container-width;
+    margin: 0 auto;
+}

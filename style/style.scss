@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Dela Gothic One";
+    src: local("Dela Gothic One"), url("../fonts/DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"),
+        url("../fonts/DelaGothicOne/DelaGothicOne-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway Bold";
+    src: local("Raleway Bold"), url("../fonts/RalewayFont/Raleway-Bold.woff2") format("woff2"),
+        url("../fonts/RalewayFont/Raleway-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway Regular";
+    src: local("Raleway Regular"), url("../fonts/RalewayFont/Raleway-Regular.woff2") format("woff2"),
+        url("../fonts/RalewayFont/Raleway-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway Light";
+    src: local("Raleway Light"), url("../fonts/RalewayFont/Raleway-Light.woff2") format("woff2"),
+        url("../fonts/RalewayFont/Raleway-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway SemiBold";
+    src: local("Raleway SemiBold"), url("../fonts/RalewayFont/Raleway-SemiBold.woff2") format("woff2"),
+        url("../fonts/RalewayFont/Raleway-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@import "./var/font-color";
+@import "./mixin/text";
+@import "./components/nav";
+@import "./components/catalog";
+@import "./components/footer";
+@import "./components/style0";
+@import "./components/user-path";
+@import "./components/card";
+@import "./components/button";
+@import "./components/saw-list";
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    @include container();
+}
+
+.title {
+    @include title();
+}
+
+.bold-text {
+    @include bold-text();
+}
+
+.bold-text-faq {
+    @include bold-text(16px, 19px);
+}
+
+.bold-text_detail {
+    @include bold-text(18px, 21px);
+}
+
+.color-text {
+    @include bold-text(16px, 19px, $main-color);
+}
+
+.color-text_footer {
+    @include bold-text(14px, 24px, $main-color);
+}
+
+.nav-text {
+    @include nav-text();
+}
+
+.main-text {
+    @include main-text();
+}
+
+.filter-text {
+    @include main-text(12px, 20px, $text-color);
+
+    @media all and (max-width: 560px) {
+        font-size: 14px;
+        line-height: 23px;
+    }
+}
+
+.plus-text {
+    @include main-text(12px, 20px);
+}
+
+.semibold-text {
+    @include semibold-text();
+
+    @media all and (max-width: 560px) {
+        font-size: 14px;
+        line-height: 23px;
+    }
+}
+
+.semibold {
+    @include semibold-text(14px, 17px);
+}
+
+.semibold-card {
+    @include semibold-text(12px, 15px);
+}
+
+@media all and (min-width: 560px) and (max-width: 1399px) {
+    .container {
+        width: calc(100% - 20px);
+    }
+}
+
+@media all and (max-width: 560px) {
+    .container {
+        width: calc(100% - 20px);
+    }
+}

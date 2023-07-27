@@ -1,0 +1,150 @@
+.footer {
+    background-color: $background-color;
+    width: 100%;
+    padding: 70px 0;
+}
+
+.footer__logo {
+    display: block;
+    width: 184px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    &__img {
+        object-fit: cover;
+        margin: 0 auto;
+        height: 32px;
+        width: 184px;
+    }
+}
+
+.parts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.footer__inform {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__inform__bloc {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__inform__link {
+    margin-bottom: 10px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer__inform2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__inform__link_color {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.footer__parts_about-us {
+    padding-right: 50px;
+    margin-left: 0;
+}
+
+.footer__parts_interesting {
+    padding-right: 304px;
+}
+
+.footer__parts_contact {
+    padding-right: 175px;
+}
+
+.footer__inform__day {
+    display: flex;
+    justify-content: space-between;
+
+    &-work {
+        margin: 0;
+    }
+}
+
+.footer__inform__network {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 59px;
+
+    &-img {
+        height: 22px;
+        width: 22px;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+}
+
+.footer__inform__brend {
+    margin: 0;
+}
+
+@media all and (max-width: 1399px) {
+    .footer {
+        padding: 20px 0 40px;
+        position: relative;
+
+        &__logo {
+            width: 132px;
+            margin-bottom: 20px;
+
+            &__img {
+                width: 132px;
+                height: 35px;
+            }
+        }
+    }
+
+    .parts {
+        justify-content: space-between;
+    }
+
+    .footer__parts_about-us,
+    .footer__parts_interesting {
+        padding-right: 0;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .footer__inform__link_color {
+        margin-top: 0;
+    }
+
+    .footer__parts_contact {
+        padding: 0;
+        order: 1;
+    }
+
+    .footer__inform__network-img {
+        margin-right: 11px;
+    }
+
+    .footer__inform__day-work {
+        margin-bottom: 20px;
+    }
+
+    .footer__inform__brend {
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
+    }
+}
+
+@media all and (max-width: 620px) {
+
+}
